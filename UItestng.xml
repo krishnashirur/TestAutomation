@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="Sogeti Test Automation Suite">
+
+<test name="Application test cases">
+    <classes>
+        <class name="com.sogeti.qa.ui.testcases.TC01VerifyServices"></class>
+        <class name="com.sogeti.qa.ui.testcases.TC02VerifyContactUs"></class>
+        <class name="com.sogeti.qa.ui.testcases.TC03VerifyCountryLinks"></class>
+    </classes>
+</test>
+</suite>
