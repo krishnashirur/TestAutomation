@@ -44,6 +44,8 @@ public class TC02VerifyContactUs extends TestBase {
         serviceautomationpage.enterMessage();
         serviceautomationpage.selectCheckbox();
         serviceautomationpage.selectCaptcha();
+        //serviceautomationpage.clicksubmit();
+
         //Assert.assertEquals(serviceautomationpage.getBackroundColorService(),"#ff304c" );
         log.info("----------------------------------" + "Ending TC02 Verify Page Navigation to Automation Page from Home page" + "----------------------------------");
 

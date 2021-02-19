@@ -55,6 +55,8 @@ public class ServiceAutomationPage extends TestBase {
     @FindBy(xpath = "//div[@class='mega-navbar refreshed level2 hover']/ul[@class='level1']//a[contains(text(),'Automation')]/..")
     WebElement  verifyAutomationisselected;
 
+    @FindBy(xpath = "//button[@name='submit']")
+    WebElement  submitbutton;
 
 
 
@@ -157,6 +159,14 @@ public class ServiceAutomationPage extends TestBase {
         UtilFunctions.switchToFrame(2);
         JavascriptExecutor executor = (JavascriptExecutor)driver;
         executor.executeScript("arguments[0].click();", captchaEle);
+    }
+
+
+
+    public void clicksubmit() {
+        waitHelper.waitABit(400);
+        waitHelper.waitForElement(submitbutton, 30);
+        submitbutton.click();
     }
 
 
