@@ -4,6 +4,11 @@
 
 <suite name="Sogeti Test Automation Suite">
 
+    <listeners>
+        <listener class-name="resources.ExtentReporterNG"></listener>
+        
+    </listeners>
+
 <test name="Application test cases">
     <classes>
         <class name="com.sogeti.qa.api.testcases.datadrivenAPITest"></class>

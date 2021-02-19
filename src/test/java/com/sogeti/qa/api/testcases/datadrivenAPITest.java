@@ -34,7 +34,7 @@ public class datadrivenAPITest extends APIBase {
 
 
     @Test(dataProvider="TestSuites",priority=1)
-    void getAPITest(String country, String postcode, String placenameExcel){
+    void datadrivenTest(String country, String postcode, String placenameExcel){
         RestAssured.baseURI= baseuri;
         String response =given().log().all().header("Content-Type", "application/json")
                 .when().get(country+"/"+postcode)

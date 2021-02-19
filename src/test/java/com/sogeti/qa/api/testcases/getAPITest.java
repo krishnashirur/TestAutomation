@@ -34,14 +34,14 @@ public class getAPITest extends APIBase {
     }
 
     @Test
-    void verifyResponseTime()
+    void verifyResponseTimeAPI1()
     {
         RequestSpecification requestSpec = new RequestSpecBuilder().build();
         requestSpec.baseUri(baseuri);
         requestSpec.basePath(basepath);
         Response response = given().spec(requestSpec).get();
         log.info(response.getTime());
-        Assert.assertTrue( response.getTime() < 4000 );
+        Assert.assertTrue( response.getTime() < 1000L );
     }
 
 
